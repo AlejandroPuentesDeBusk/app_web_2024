@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario EMail</title>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "9rbe5feAioxat7u5R",
+    });
+    })();
+    </script>
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+        <h1>Construcciones Puentes</h1>
+    
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+
+            <form id="formulario">
+
+                <h2>Contactanos</h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+                <label for="EMail">Email</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu E-Mail" required>
+
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject"required placeholder="Proyecto">
+
+                <label for="message">Tu Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe aqui"></textarea>
+
+                <button type="submit" onclick="enviar_email()">Enviar Correo</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <button onclick="location.href='../index.html'"id="Back">Go Back To Menu</button>
+    </footer>
+
+
+
+
+    
+</body>
+</html>

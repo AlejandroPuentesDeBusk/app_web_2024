@@ -46,6 +46,7 @@ function operacion(event) {
     else
     {
         alert("Disculpe, introduzca solamente numeros");
+        document.getElementById('resultado').innerText = "Ingrese solo numeros"
     }
 
 }
@@ -55,3 +56,10 @@ function is_number(n)
     return !isNaN(parseFloat(n) && isFinite(n))
 }
 
+// resultado.innerHTML =<h2> ${n1} ${sig} ${n2} = ${ope}</h2>;
+
+
+//Header, navbar, sidebar, main, footer, display grid
+//grid template: "header"
+//.header
+//grid area: header

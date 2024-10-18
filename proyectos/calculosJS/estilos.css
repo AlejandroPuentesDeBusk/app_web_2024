@@ -7,5 +7,95 @@ body{
     line-height: 2;
 }
 
+#boton{
+    margin-top: 3vw;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(83, 186, 247);
+    font-weight: bold;
+}
 
 
+#boton:hover{
+    background-color: lightblue;
+    border: 2px solid lightblue;
+}
+
+#boton:active{
+    background-color: lightblue;
+    border: 2px solid lightblue;
+}
+
+
+
+#contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h2{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    font-size: 3vw;
+    color: white;
+    font-weight: normal;
+
+}
+
+form{
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+
+}
+
+.caja2{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+#N1{
+    width: 16rem;
+    height: 2vw;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+#N2{
+    width: 16rem;
+    height: 2vw;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+#Operaciones{
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    background-color: rgb(183, 248, 234);
+}
+
+#Back{
+    margin-top: 4rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    
+}
+
+#Back:hover{
+    background-color: white;
+    color: black;
+
+}
+
+#Back:active{
+    background-color: rgb(134, 134, 134);
+    color: black;
+
+}
