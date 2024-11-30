@@ -1,0 +1,25 @@
+<h2>{{tlitle}}</h2>
+
+<form method="POST">
+    {% crsf_token %}
+
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Inicar Sesion</button>
+
+</form>
+
+    {% if messages %}
+
+    <ul>
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+
+    </ul>
+
+    {% endif %}

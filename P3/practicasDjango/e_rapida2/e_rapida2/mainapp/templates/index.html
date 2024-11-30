@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{{ title }}{% endblock title %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+
+</head>
+<body>
+
+    {{title}}
+
+
+    {% block nav %}
+
+    <nav id="barra">
+        <ul>
+            <li><a href="{% url "mision" %}">MISION</a></li>
+            <li><a href="{% url "vision" %}">VISION</a></li>
+            <li><a href="{% url "about" %}">ABOUT</a></li>
+            <li><a href="{% url "inicio_s" %}">INICIAR SESION</a></li>
+            <li><a href="{% url "registro" %}">REGISTRASE</a></li>
+            <li><a href="{% url "admin_view" %}">ADMIN</a></li>
+        </ul>
+    </nav>
+
+
+    {% endblock nav %}
+
+    {{content}}
+
+
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+</html>
