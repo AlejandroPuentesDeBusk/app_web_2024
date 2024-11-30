@@ -1,3 +1,10 @@
+<<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,29 +19,31 @@
     <header>
         <div id="logotipo">
             <img src="../img/logophp.png" alt="Imagen Django" title="Django">
-            <h1>Django Proyecto Web</h1>
+            <h1>PHP Proyecto Web</h1>
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html" >Inicio</a></li>
-            <li><a href="acercade.html">Acerca de</a></li>
-            <li><a href="mision.html">Mision</a></li>
-            <li><a href="vision.html">Vision</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="inicio_s.html">Inicio Sesion</a></li>
-            <li><a href="cerrar_s.html">Cerrar Sesion</a></li>
+            <li><a href="../index.php" >Inicio</a></li>
+            <li><a href="acercade.php">Acerca de</a></li>
+            <li><a href="mision.php">Mision</a></li>
+            <li><a href="vision.php">Vision</a></li>
+            <li><a href="categorias.php">categorias</a></li>
+            <li><a href="articulos.php">articulos</a></li>
+            <li><a href="../controladores/logout.php">cerrar session</a></li>
+            
+
         </ul>
     </nav>
     <section id="content">
        <div class="box">
-            <h1>Acerca de Nosotros</h1>
+            <h1>Nuestra Vision</h1>
             <hr>
             <p>Somos un equipo destinado al desarrollo de SW</p>
        </div>
     </section>
     <footer>
-        <p>Curso de Django con Dagonline &copy; 2024 | Visitado el: 01/10/24</p>
+         <p>Alejandro</p>
     </footer>
 </body>
 </html>
