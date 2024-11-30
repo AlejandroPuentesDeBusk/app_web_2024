@@ -8,4 +8,25 @@
     <h1>{{title}}</h1>
     <h2>{{content}}</h2>
 
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert-success">
+        {{message}}
+    </div>
+    {% endfor %}
+
+    {% if user.email %}
+    <br><hr><br>
+    <h2>Bienvenido al sistema {{ user.first_name }} {{ user.last_name }}</h2>
+
+    <h3>{{ user.email }}</h3>
+
+
+    {% else %}
+    <h2>Porfavor inicie sesion</h2>
+
+    {% endif %}
+
+    {% endif %}
+
 {% endblock content %}

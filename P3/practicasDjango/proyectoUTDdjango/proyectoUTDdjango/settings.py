@@ -24,11 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*yca7r#%gmb6!_horsjlu2e%^b%me8grb%24jo_rn_za8=c57@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-HANDLER404 = 'main.views.custom_404'
+HANDLER404 = 'main.views.error404'
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'articulos',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main/static')]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
+#media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 
 # Default primary key field type
